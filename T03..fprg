@@ -4,10 +4,10 @@
         <attribute name="name" value="T03."/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-04 11:24:56 AM"/>
+        <attribute name="saved" value="2024-10-04 11:27:18 AM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDswOTo0ODowNyBBTTsyNjY2"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDswOTo0ODoxMSBBTTsxO0xlbm92bztMQVBUT1AtUVE5RVM4U1I7MjAyNC0xMC0wMjswNDo0MTo0NCBQTTtUMDMuZnByZzs2NTQ3"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDsxMToyNDo1NiBBTTsxMDsyODEz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDsxMToyNzoxOCBBTTsxMTsyODE1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -15,6 +15,7 @@
             <declare name="ISBN, judulbuku, penulis, kategori, formatbukuelektronik, penerbit, tub, kategoridiskon" type="String" array="False" size=""/>
             <declare name="tahunterbit, stokbuku" type="Integer" array="False" size=""/>
             <declare name="hargapembelian, minimummargin, rating, diskon" type="Real" array="False" size=""/>
+            <assign variable="kategori" expression="&quot;&quot;"/>
             <do expression="ISBN!=&quot;---&quot;">
                 <input variable="ISBN"/>
                 <if expression="ISBN=&quot;---&quot;">

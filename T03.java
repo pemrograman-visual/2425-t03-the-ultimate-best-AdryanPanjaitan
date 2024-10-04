@@ -12,6 +12,7 @@ public class T03 {
         int tahunterbit, stokbuku;
         double hargapembelian, minimummargin, rating, diskon;
 
+        kategori = "";
         do {
             iSBN = input.nextLine();
             if (iSBN.equals("---")) {
