@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="T03"/>
-        <attribute name="authors" value="Lenovo"/>
+        <attribute name="name" value="T03."/>
+        <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-02 04:53:25 PM"/>
-        <attribute name="created" value="TGVub3ZvO0xBUFRPUC1RUTlFUzhTUjsyMDI0LTEwLTAyOzA0OjQxOjQ0IFBNOzMwMDA="/>
-        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1RUTlFUzhTUjsyMDI0LTEwLTAyOzA0OjQ1OjU2IFBNOzY7TGVub3ZvO0xBUFRPUC1RUTlFUzhTUjsyMDI0LTEwLTAyOzAzOjMwOjU0IFBNO1QwMyBHQSBKQURJLmZwcmc7NzM3Ng=="/>
-        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1RUTlFUzhTUjsyMDI0LTEwLTAyOzA0OjUzOjI1IFBNOzE7MzExMA=="/>
+        <attribute name="saved" value="2024-10-04 10:07:34 AM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDswOTo0ODowNyBBTTsyNjY2"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDswOTo0ODoxMSBBTTsxO0xlbm92bztMQVBUT1AtUVE5RVM4U1I7MjAyNC0xMC0wMjswNDo0MTo0NCBQTTtUMDMuZnByZzs2NTQ3"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDsxMDowNzozNCBBTTsxOzI3NjE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -24,18 +24,24 @@
                 <input variable="formatbukuelektronik"/>
                 <input variable="hargapembelian"/>
                 <input variable="minimummargin"/>
-                <assign variable="diskon" expression="(minimummargin/hargapembelian)*-1"/>
-                <if expression="diskon&gt;=0.4">
+                <if expression="minimummargin&gt;0">
                     <then>
-                        <assign variable="kategoridiskon" expression="&quot;Once in a lifetime&quot;"/>
+                        <assign variable="kategoridiskon" expression="&quot;---&quot;"/>
                     </then>
                     <else>
-                        <if expression="diskon&gt;0.2">
+                        <if expression="minimummargin&lt;=-(hargapembelian*0.4)">
                             <then>
-                                <assign variable="kategoridiskon" expression="&quot;Never come twice&quot;"/>
+                                <assign variable="kategoridiskon" expression="&quot;Once in a lifetime&quot;"/>
                             </then>
                             <else>
-                                <assign variable="kategoridiskon" expression="&quot;No regret&quot;"/>
+                                <if expression="minimummargin&lt;-(hargapembelian*0.2)">
+                                    <then>
+                                        <assign variable="kategoridiskon" expression="&quot;Never come twice&quot;"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="kategoridiskon" expression="&quot;No regret&quot;"/>
+                                    </else>
+                                </if>
                             </else>
                         </if>
                     </else>
@@ -76,7 +82,7 @@
                         </if>
                     </else>
                 </if>
-                <if expression="rating&gt;=4.7&amp;&amp;diskon&gt;0.4">
+                <if expression="rating==&quot;Best pick&quot;&amp;&amp;diskon=&quot;Once in a lifetime&quot;">
                     <then>
                         <assign variable="tub" expression="&quot;The ultimate best&quot;"/>
                     </then>
