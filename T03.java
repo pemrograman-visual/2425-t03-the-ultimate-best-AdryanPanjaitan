@@ -63,7 +63,7 @@ public class T03 {
                         }
                     }
                 }
-                if (rating >= 4.7 && minimummargin < -(hargapembelian * 0.4)) {
+                if (kategori.equals("Best Pick") && kategoridiskon.equals("Once in a lifetime")) {
                     tub = "The ultimate best";
                 } else {
                     tub = "---";

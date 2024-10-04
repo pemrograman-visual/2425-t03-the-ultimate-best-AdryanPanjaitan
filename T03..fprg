@@ -4,10 +4,10 @@
         <attribute name="name" value="T03."/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-04 11:09:58 AM"/>
+        <attribute name="saved" value="2024-10-04 11:12:49 AM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDswOTo0ODowNyBBTTsyNjY2"/>
         <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDswOTo0ODoxMSBBTTsxO0xlbm92bztMQVBUT1AtUVE5RVM4U1I7MjAyNC0xMC0wMjswNDo0MTo0NCBQTTtUMDMuZnByZzs2NTQ3"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDsxMTowOTo1OCBBTTs3OzI3NzY="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtSTZHUDRWTU47MjAyNC0xMC0wNDsxMToxMjo0OSBBTTs4OzI3NzE="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -94,7 +94,7 @@
                                 </if>
                             </else>
                         </if>
-                        <if expression="rating&gt;=4.7 &amp;&amp; minimummargin&lt;-(hargapembelian*0.4)">
+                        <if expression="kategori==&quot;Best Pick&quot; &amp;&amp; kategoridiskon==&quot;Once in a lifetime&quot;">
                             <then>
                                 <assign variable="tub" expression="&quot;The ultimate best&quot;"/>
                             </then>
