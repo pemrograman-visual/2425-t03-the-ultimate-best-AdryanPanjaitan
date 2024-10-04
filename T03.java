@@ -16,11 +16,11 @@ public class T03 {
         while (!iSBN.equals("---")) {
             judulbuku = input.nextLine();
             penulis = input.nextLine();
-            tahunterbit = Integer.parseInt(input.nextLine());
+            tahunterbit = input.nextInt();
             penerbit = input.nextLine();
             formatbukuelektronik = input.nextLine();
-            hargapembelian = Double.parseDouble(input.nextLine());
-            minimummargin = Double.parseDouble(input.nextLine());
+            hargapembelian = input.nextDouble();
+            minimummargin = input.nextDouble();
             diskon = minimummargin / hargapembelian * -1;
             if (diskon >= 0.4) {
                 kategoridiskon = "Once in a lifetime";
@@ -31,8 +31,8 @@ public class T03 {
                     kategoridiskon = "No regret";
                 }
             }
-            stokbuku = Integer.parseInt(input.nextLine());
-            rating = Double.parseDouble(input.nextLine());
+            stokbuku = input.nextInt();
+            rating = input.nextDouble();
             if (rating >= 4.7 && rating <= 5.0) {
                 kategori = "Best Pick";
             } else {
