@@ -4,10 +4,7 @@
 import java.util.*;
 import java.lang.Math;
 
-import java.util.*;
-import java.lang.Math;
-
-public class JavaApplication {
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -63,7 +60,7 @@ public class JavaApplication {
                     }
                 }
             }
-            if (kategori.equals("Best pick" + kategoridiskon) == "Once in a lifetime") {
+            if (rating >= 4.7 && minimummargin < -(hargapembelian * 0.4)) {
                 tub = "The ultimate best";
             } else {
                 tub = "---";
