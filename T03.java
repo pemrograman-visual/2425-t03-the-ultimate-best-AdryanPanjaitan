@@ -55,12 +55,12 @@ public class T03 {
                     }
                 }
             }
-            if (rating == "Best pick" && diskon == "Once in a lifetime") {
+            if (kategori.equals("Best pick") && kategoridiskon.equals("Once in a lifetime")) {
                 tub = "The ultimate best";
             } else {
                 tub = "---";
             }
-            System.out.println(iSBN + "|" + judulbuku + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbukuelektronik + "|" + hargapembelian + "|" + minimummargin + "|" + stokbuku + "|" + rating + "|" + kategori + "|" + tub);
+            System.out.println(iSBN + "|" + judulbuku + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbukuelektronik + "|" + hargapembelian + "|" + minimummargin + "|" + stokbuku + "|" + rating + "|" + kategori + "|" + kategoridiskon + "|" + tub);
         }
     }
 }
