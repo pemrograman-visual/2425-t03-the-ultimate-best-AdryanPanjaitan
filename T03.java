@@ -18,13 +18,18 @@ public class T03 {
             penulis = input.nextLine();
             tahunterbit = Integer.parseInt(input.nextLine());
             penerbit = input.nextLine();
+            if (penerbit.equals("---")) {
+                penerbit = "---";
+            } else {
+                penerbit = penerbit;
+            }
             formatbukuelektronik = input.nextLine();
             hargapembelian = Double.parseDouble(input.nextLine());
             minimummargin = Double.parseDouble(input.nextLine());
             if (minimummargin > 0) {
                 kategoridiskon = "---";
             } else {
-                if (minimummargin <= -(hargapembelian * 0.4)) {
+                if (minimummargin < -(hargapembelian * 0.4)) {
                     kategoridiskon = "Once in a lifetime";
                 } else {
                     if (minimummargin < -(hargapembelian * 0.2)) {
