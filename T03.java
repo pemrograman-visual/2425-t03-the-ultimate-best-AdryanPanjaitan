@@ -28,6 +28,7 @@ public class T03 {
                 formatbukuelektronik = input.nextLine();
                 hargapembelian = Double.parseDouble(input.nextLine());
                 minimummargin = Double.parseDouble(input.nextLine());
+                kategoridiskon = "";
                 if (minimummargin > 0) {
                     kategoridiskon = "---";
                 } else {
